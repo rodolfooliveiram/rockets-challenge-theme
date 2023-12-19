@@ -1,4 +1,4 @@
-// Slick Carousels Scripts
+// Slick Carousel Scripts
 $(document).ready(function () {
   // Carousel Template (Web Content)
   $('.carousel-template').slick({
@@ -41,8 +41,8 @@ $(document).ready(function () {
     ],
   });
 
-  // GX2 Asset Publisher Template
-  $('.case-carousel').slick({
+  // Noticia Asset Publisher Template
+  $('.asset-publisher-carousel').slick({
     prevArrow:
       "<button class='prevArrow'><div class='line-wrapper'><div class='line1'></div><div class='line2'></div></div></button>",
     nextArrow:

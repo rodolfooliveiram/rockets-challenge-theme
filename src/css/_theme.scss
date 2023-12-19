@@ -1,0 +1,21 @@
+body header .portlet {
+  margin-bottom: 0;
+}
+
+.navbar-light .nav-link {
+  font-weight: bold;
+}
+
+.sign-in {
+  background-color: var(--azure);
+  border-radius: 20px;
+}
+
+footer {
+  background-color: var(--azure);
+}
+
+footer .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}

@@ -14,7 +14,7 @@
   .line2 {
     width: 32px;
     height: 5px;
-    background-color: #b3b3b3;
+    background-color: #dedede;
     border-radius: 4px;
     transition: 0.2s;
   }
@@ -38,12 +38,12 @@
 }
 
 .prevArrow {
-  left: -36px;
+  left: -50px;
 }
 
 .nextArrow {
   transform: rotate(180deg);
-  right: -36px;
+  right: -50px;
 }
 
 // Custom Slick Carousel Dots

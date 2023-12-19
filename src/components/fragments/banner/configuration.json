@@ -3,27 +3,36 @@
     {
       "fields": [
         {
-          "name": "numberOfCards",
-          "label": "Número de Cards",
+          "name": "bannerOverlayColor",
+          "label": "Cor da Pelicula do Banner",
           "type": "select",
-          "dataType": "int",
+          "dataType": "string",
           "typeOptions": {
             "validValues": [
               {
-                "value": "1"
+                "value": "Transparente"
               },
               {
-                "value": "2"
+                "value": "Preto"
               },
               {
-                "value": "3"
+                "value": "Branco"
               },
               {
-                "value": "4"
+                "value": "Cinza"
+              },
+              {
+                "value": "Azul"
+              },
+              {
+                "value": "Verde"
+              },
+              {
+                "value": "Roxo"
               }
             ]
           },
-          "defaultValue": "3"
+          "defaultValue": "Preto"
         },
         {
           "name": "buttonColor",

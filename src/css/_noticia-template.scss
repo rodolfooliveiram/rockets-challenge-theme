@@ -1,0 +1,39 @@
+.portlet-body .default-asset-publisher > div:first-child {
+  display: none !important;
+}
+
+.noticia-header {
+  height: 250px;
+  overflow: hidden;
+
+  .container {
+    z-index: 1;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 55ch;
+  }
+
+  a {
+    text-decoration: none;
+    border-radius: 30px;
+  }
+}
+
+.color-overlay {
+  background: hsl(222deg 100% 50% / 30%);
+}
+
+.noticia-content {
+  margin: 0 auto;
+  padding: 3rem 0 3rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+}

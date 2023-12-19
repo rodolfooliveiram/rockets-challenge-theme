@@ -1,0 +1,92 @@
+.banner {
+  height: 600px;
+  overflow: hidden;
+}
+
+.banner .container {
+  z-index: 1;
+}
+
+.banner img {
+  top: 0;
+  object-fit: cover;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  max-width: 55ch;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.bg-Transparente {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bg-Preto {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-Branco {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-Cinza {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.bg-Azul {
+  background-color: rgba(1, 160, 250, 0.3);
+}
+
+.bg-Verde {
+  background-color: rgba(25, 219, 209, 0.3);
+}
+
+.bg-Roxo {
+  background-color: rgba(93, 63, 211, 0.3);
+}
+
+.button-color-Azure {
+  background-color: var(--azure);
+}
+
+.button-color-Azure:hover {
+  background-color: var(--dark-azure);
+}
+
+.button-color-Aqua {
+  background-color: var(--aqua);
+}
+
+.button-color-Aqua:hover {
+  background-color: var(--dark-azure);
+}
+
+.button-color-Navy {
+  background-color: var(--navy);
+}
+
+.button-color-Navy:hover {
+  background-color: var(--dark-navy);
+}
+
+.button-color-Violet {
+  background-color: var(--violet);
+}
+
+.button-color-Violet:hover {
+  background-color: var(--dark-violet);
+}
+
+.button-color-Orange {
+  background-color: var(--orange);
+}
+
+.button-color-Orange:hover {
+  background-color: var(--dark-orange);
+}

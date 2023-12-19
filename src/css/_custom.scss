@@ -4,12 +4,13 @@
 
 @import 'liferay-font-awesome/scss/font-awesome';
 @import 'liferay-font-awesome/scss/glyphicons';
-@import 'theme.scss';
-@import 'card-template';
-@import 'banner-template';
-@import 'slick.scss';
-@import 'slick-theme.scss';
-@import 'carousel.scss';
-@import 'gx2-asset-publisher-template.scss'; /* endinject */
+@import 'utilities/colors';
+@import 'theme';
+@import 'slick';
+@import 'slick-theme';
+@import 'carousel';
+@import 'noticia-publisher-template';
+@import 'noticia-template';
+/* endinject */
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */

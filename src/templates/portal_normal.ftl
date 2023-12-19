@@ -21,61 +21,89 @@
 		<div class="d-flex flex-column flex-fill position-relative" id="wrapper">
 			<#if show_header>
 				<header id="banner" role="banner" class="p-3 p-md-4 bg-light">
-					<div id="heading">
-						<div aria-level="1" class="site-title" role="heading">
-							<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-							<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-							<#if show_site_name>
-								<span class="site-name" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-								${site_name}
-								</span>
-							</#if>
-							</a>
-							<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) />
-							<div class="autofit-col autofit-col-expand">
-								<#if show_header_search>
-									<div class="justify-content-md-end mr-4 navbar-form" role="search">
-										<@liferay.search_bar default_preferences="${preferences}" />
-									</div>
+					<div id="heading" class="navbar navbar-light navbar-top py-3 d-none d-md-block">
+						<div class="container p-0">
+							<div class="align-items-center autofit-row">
+								<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
+								<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
+								<#if show_site_name>
+									<span class="site-name" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
+									${site_name}
+									</span>
 								</#if>
+								</a>
+								<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) />
+								<div class="autofit-col autofit-col-expand">
+									<div class="px-5">
+										<@liferay.navigation_menu default_preferences="${preferences}" />
+									</div>
+								</div>
+								<div class="autofit-col">
+									<#if show_header_search>
+										<div class="justify-content-md-end mr-4 navbar-form" role="search">
+											<@liferay.search_bar default_preferences="${preferences}" />
+										</div>
+									</#if>
+								</div>
+								<div class="autofit-col">
+									<#if !is_signed_in>
+										<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" class="sign-in px-3 py-2 text-light font-weight-bold" rel="nofollow">
+											${sign_in_text}
+										</a>
+										<#else>
+											<@liferay.user_personal_bar />
+									</#if>
+								</div>
 							</div>
 						</div>
 					</div>
-					<#if !is_signed_in>
-						<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
-							${sign_in_text}
-						</a>
-					</#if>
-					<#if has_navigation && is_setup_complete>
-						<#include "${full_templates_path}/navigation.ftl" />
-					</#if>
-				</header>
+					<div class="navbar navbar-expand-md navbar-light d-md-none px-0">
+						<div class="container-fluid p-0">
+							<a class="${logo_css_class} align-items-center d-inline-flex d-md-none logo-xs" href="${site_default_url}" rel="nofollow">
+								<img alt="${logo_description}" src="${site_logo}" />
+								<#if show_site_name>
+									<h2 <#if show_control_menu>aria-hidden="true"
+								</#if> class="font-weight-bold h2 mb-0 text-dark">
+								${site_name}
+								</h2>
 			</#if>
-			<section id="content">
-				<h2 class="hide-accessible sr-only" role="heading" aria-level="1">
-					${htmlUtil.escape(the_title)}
-				</h2>
-				<#if selectable>
+			</a>
+			<#include "${full_templates_path}/navigation.ftl" />
+		</div>
+	</div>
+	</header>
+	</#if>
+	<section id="content">
+		<h2 class="hide-accessible sr-only" role="heading" aria-level="1">
+			${htmlUtil.escape(the_title)}
+		</h2>
+		<#if selectable>
+			<@liferay_util["include"]
+				page=content_include />
+			<#else>
+				${portletDisplay.recycle()}
+				${portletDisplay.setTitle(the_title)}
+				<@liferay_theme["wrap-portlet"]
+					page="portlet.ftl">
 					<@liferay_util["include"]
 						page=content_include />
-					<#else>
-						${portletDisplay.recycle()}
-						${portletDisplay.setTitle(the_title)}
-						<@liferay_theme["wrap-portlet"]
-							page="portlet.ftl">
-							<@liferay_util["include"]
-								page=content_include />
-							</@>
-				</#if>
-			</section>
-			<footer id="footer" role="contentinfo">
-				<p class="powered-by">
-					<@liferay.language_format
-						arguments='<a href="http://www.liferay.com" rel="external">Liferay</a>'
-						key="powered-by-x" />
-				</p>
-			</footer>
-		</div>
+					</@>
+		</#if>
+	</section>
+	<#if show_footer>
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center text-light text-md-left">
+						<@liferay.language_format
+							arguments='<a class="text-decoration-underline text-white" href="https://github.com/rodolfooliveiram" target="_blank" rel="external">Rodolfo Oliveira</a>'
+							key="powered-by-x" />
+					</div>
+				</div>
+			</div>
+		</footer>
+	</#if>
+	</div>
 	</div>
 	<@themeJs filename='jquery-1.11.0.js' />
 	<@themeJs filename='jquery-migrate-1.2.1.js' />
