@@ -35,12 +35,12 @@
                     </p>
                   </div>
                 </div>
-                <div class="d-flex flex-wrap">
+                <div class="categories d-flex flex-wrap">
                   <#list noticiaCategories as category>
                     <#assign categoryName=category.getName() />
                     <#assign categoryIsLowerCase=stringUtil.lowerCase(category.getName()) />
                     <#assign categoryCSSClass=stringUtil.replace(categoryIsLowerCase, " " , "-" ) />
-                    <div class="category ${categoryCSSClass} px-2 py-1 md-sm-0">
+                    <div class="category ${categoryCSSClass} px-2 py-1 mr-2">
                       ${categoryName}
                     </div>
                   </#list>

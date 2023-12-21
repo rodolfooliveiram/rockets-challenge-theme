@@ -7,15 +7,14 @@
 <#assign resourcePrimKey=getterUtil.getLong(journalArticle.getResourcePrimKey()) />
 <#assign assetEntry=AssetEntryLocalService.getEntry("com.liferay.journal.model.JournalArticle", resourcePrimKey) />
 <#assign assetEntryCategories=assetEntry.getCategories() />
-
-<div class="container">
-  <div class="noticia-content w-75">
-    <div class="d-flex flex-wrap mb-4">
+<div class="container px-0">
+  <div class="noticia-content">
+    <div class="categories d-flex flex-wrap mb-4">
       <#list assetEntryCategories as category>
         <#assign categoryName=category.getName() />
         <#assign categoryIsLowerCase=stringUtil.lowerCase(category.getName()) />
         <#assign categoryCSSClass=stringUtil.replace(categoryIsLowerCase, " " , "-" ) />
-        <p class="category ${categoryCSSClass} px-2 py-1 mb-2 md-sm-0">
+        <p class="category ${categoryCSSClass} px-2 py-1 mr-2 mb-2">
           ${categoryName}
         </p>
       </#list>

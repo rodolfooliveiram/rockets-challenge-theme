@@ -9,8 +9,12 @@
 @import 'slick';
 @import 'slick-theme';
 @import 'carousel';
-@import 'noticia-publisher-template';
-@import 'noticia-template';
+@import 'adt/noticia-adt';
+@import 'templates/noticia-template';
+@import 'adt/search-results-adt';
+@import 'widgets/search-page-widgets';
+@import 'widgets/category-filter-widget';
+
 /* endinject */
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */

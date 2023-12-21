@@ -1,4 +1,8 @@
 :root {
+  --light-gray: #f8f9fa;
+  --gray: #dedede;
+  --dark-gray: #737373;
+
   --azure: #004dff;
   --dark-azure: #003dcc;
   --aqua: #19dbd1;
@@ -10,4 +14,11 @@
   --orange: #f66a1d;
   --dark-orange: #d75109;
   --emerald: #50c878;
+
+  --dark-overlay: rgba(0, 0, 0, 0.3);
+  --light-overlay: rgba(255, 255, 255, 0.3);
+  --azure-overlay: rgba(0, 77, 255, 0.4);
+  --aqua-overlay: rgba(0, 196, 186, 0.4);
+  --navy-overlay: rgba(27, 32, 105, 0.6);
+  --violet-overlay: rgba(93, 63, 211, 0.6);
 }

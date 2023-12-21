@@ -10,29 +10,36 @@
           "typeOptions": {
             "validValues": [
               {
-                "value": "Transparente"
+                "label": "Sem película",
+                "value": ""
               },
               {
-                "value": "Preto"
+                "label": "Dark",
+                "value": "dark-overlay"
               },
               {
-                "value": "Branco"
+                "label": "Light",
+                "value": "light-overlay"
               },
               {
-                "value": "Cinza"
+                "label": "Azure",
+                "value": "azure-overlay"
               },
               {
-                "value": "Azul"
+                "label": "Aqua",
+                "value": "aqua-overlay"
               },
               {
-                "value": "Verde"
+                "label": "Navy",
+                "value": "navy-overlay"
               },
               {
-                "value": "Roxo"
+                "label": "Violet",
+                "value": "violet-overlay"
               }
             ]
           },
-          "defaultValue": "Preto"
+          "defaultValue": "Dark"
         },
         {
           "name": "buttonColor",
@@ -42,23 +49,28 @@
           "typeOptions": {
             "validValues": [
               {
-                "value": "Azure"
+                "label": "Azure",
+                "value": "azure-btn"
               },
               {
-                "value": "Aqua"
+                "label": "Aqua",
+                "value": "aqua-btn"
               },
               {
-                "value": "Navy"
+                "label": "Navy",
+                "value": "navy-btn"
               },
               {
-                "value": "Violet"
+                "label": "Violet",
+                "value": "violet-btn"
               },
               {
-                "value": "Orange"
+                "label": "Orange",
+                "value": "orange-btn"
               }
             ]
           },
-          "defaultValue": "Azure"
+          "defaultValue": "azure-btn"
         }
       ]
     }

@@ -5,24 +5,11 @@
         {
           "name": "numberOfCards",
           "label": "Número de Cards",
-          "type": "select",
-          "dataType": "int",
+          "type": "text",
           "typeOptions": {
-            "validValues": [
-              {
-                "value": "1"
-              },
-              {
-                "value": "2"
-              },
-              {
-                "value": "3"
-              },
-              {
-                "value": "4"
-              }
-            ]
+            "placeholder": "Placeholder"
           },
+          "dataType": "int",
           "defaultValue": "3"
         },
         {
@@ -33,23 +20,28 @@
           "typeOptions": {
             "validValues": [
               {
-                "value": "Azure"
+                "label": "Azure",
+                "value": "azure-btn"
               },
               {
-                "value": "Aqua"
+                "label": "Aqua",
+                "value": "aqua-btn"
               },
               {
-                "value": "Navy"
+                "label": "Navy",
+                "value": "navy-btn"
               },
               {
-                "value": "Violet"
+                "label": "Violet",
+                "value": "violet-btn"
               },
               {
-                "value": "Orange"
+                "label": "Orange",
+                "value": "orange-btn"
               }
             ]
           },
-          "defaultValue": "Azure"
+          "defaultValue": "azure-btn"
         }
       ]
     }

@@ -1,0 +1,9 @@
+.result {
+  padding-bottom: 3rem;
+}
+
+.result + .result {
+  border-top: 1px solid var(--gray);
+  padding-top: 3rem;
+  padding-bottom: 0;
+}

@@ -40,28 +40,52 @@
   }
 }
 
-.category {
+.categories .category {
+  text-decoration: none;
   font-size: 0.875rem;
   color: #ffffff;
   border-radius: 35px;
   background-color: var(--azure);
-  margin-right: 1rem;
 }
 
-.category.eventos {
-  background-color: var(--violet);
+a.category:hover {
+  background-color: var(--dark-azure);
+}
+
+.categories.categories-filter .category {
+  font-size: 1rem;
 }
 
 .category.cases {
   background-color: var(--navy);
 }
 
-.category.talks {
-  background-color: var(--emerald);
+a.category.cases:hover {
+  background-color: var(--dark-navy);
+}
+
+.category.eventos {
+  background-color: var(--aqua);
+}
+
+a.category.eventos:hover {
+  background-color: var(--dark-aqua);
 }
 
 .category.projetos {
+  background-color: var(--violet);
+}
+
+a.category.projetos:hover {
+  background-color: var(--dark-violet);
+}
+
+.category.talks {
   background-color: var(--orange);
+}
+
+a.category.talks:hover {
+  background-color: var(--dark-orange);
 }
 
 @media (min-width: 576px) {

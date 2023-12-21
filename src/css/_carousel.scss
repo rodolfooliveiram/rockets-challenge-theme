@@ -14,14 +14,14 @@
   .line2 {
     width: 32px;
     height: 5px;
-    background-color: #dedede;
+    background-color: var(--gray);
     border-radius: 4px;
     transition: 0.2s;
   }
 
   &:hover .line1,
   &:hover .line2 {
-    background-color: #737373;
+    background-color: var(--dark-gray);
   }
 
   .line1 {

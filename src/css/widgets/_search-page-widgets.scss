@@ -1,0 +1,44 @@
+// Classes customizadas incluídas nas configurações "Avançadas" dos widgets
+.sort-widget,
+.category-facet {
+  .portlet-content {
+    background-color: var(--light-gray);
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.sort-widget .control-label {
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+
+.tag-facet .portlet-content {
+  background-color: var(--light-gray);
+  padding: 0;
+}
+
+.tag-facet,
+.category-facet {
+  .panel {
+    background-color: transparent;
+  }
+
+  .panel-title {
+    font-weight: bold;
+    color: var(--dark-gray);
+  }
+}
+
+.search-bar-page-body {
+  .portlet-content {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .panel-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

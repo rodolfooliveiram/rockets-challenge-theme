@@ -23,70 +23,66 @@
   border-radius: 30px;
 }
 
-.bg-Transparente {
-  background-color: rgba(0, 0, 0, 0);
+.dark-overlay {
+  background-color: var(--dark-overlay);
 }
 
-.bg-Preto {
-  background-color: rgba(0, 0, 0, 0.3);
+.light-overlay {
+  background-color: var(--light-overlay);
 }
 
-.bg-Branco {
-  background-color: rgba(255, 255, 255, 0.3);
+.aqua-overlay {
+  background-color: var(--aqua-overlay);
 }
 
-.bg-Cinza {
-  background-color: rgba(217, 217, 217, 0.3);
+.azure-overlay {
+  background-color: var(--azure-overlay);
 }
 
-.bg-Azul {
-  background-color: rgba(1, 160, 250, 0.3);
+.navy-overlay {
+  background-color: var(--navy-overlay);
 }
 
-.bg-Verde {
-  background-color: rgba(25, 219, 209, 0.3);
+.violet-overlay {
+  background-color: var(--violet-overlay);
 }
 
-.bg-Roxo {
-  background-color: rgba(93, 63, 211, 0.3);
-}
-
-.button-color-Azure {
+.azure-btn {
   background-color: var(--azure);
 }
 
-.button-color-Azure:hover {
+.azure-btn:hover {
   background-color: var(--dark-azure);
 }
 
-.button-color-Aqua {
+.aqua-btn {
   background-color: var(--aqua);
 }
 
-.button-color-Aqua:hover {
+.aqua-btn:hover {
   background-color: var(--dark-azure);
 }
 
-.button-color-Navy {
+.navy-btn {
   background-color: var(--navy);
 }
 
-.button-color-Navy:hover {
+.navy-btn:hover {
   background-color: var(--dark-navy);
 }
 
-.button-color-Violet {
+.violet-btn {
   background-color: var(--violet);
 }
 
-.button-color-Violet:hover {
+.violet-btn:hover {
   background-color: var(--dark-violet);
 }
 
-.button-color-Orange {
+.orange-btn {
   background-color: var(--orange);
 }
 
-.button-color-Orange:hover {
+.orange-btn:hover {
   background-color: var(--dark-orange);
 }
