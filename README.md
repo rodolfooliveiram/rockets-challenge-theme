@@ -4,7 +4,7 @@ Projeto desenvolvido para o desafio final do programa GX2 Rocket Talents 2023, t
 
 Nesse projeto foram desenvolvidos um tema básico com header e footer, fragmentos, ADTs, estrutura e modelo de conteúdo personalizado.
 
-![](./screencapture.gif)
+![](./screencapture.png)
 
 ## :gear: Tech
 
